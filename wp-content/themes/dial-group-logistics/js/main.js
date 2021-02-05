@@ -127,6 +127,43 @@ new WOW().init();
     btnCall.addEventListener('click', modalShow);
     modalClose.addEventListener('click', modalHide);
   }
+
+  if (document.querySelector('.btn--under-slider')) {
+    var _modalShow = function _modalShow() {
+      _overlay.classList.add('overlay--active');
+
+      _modalCall.classList.add('popup--active');
+
+      _body.classList.add('no-scroll');
+
+      _html.classList.add('html-overflow');
+    };
+
+    var _modalHide = function _modalHide() {
+      _overlay.classList.remove('overlay--active');
+
+      _modalCall.classList.remove('popup--active');
+
+      _body.classList.remove('no-scroll');
+
+      _html.classList.remove('html-overflow');
+    };
+
+    var _btnCall = document.querySelector('.btn--under-slider');
+
+    var _modalClose = document.querySelector('.popup .popup__close');
+
+    var _body = document.getElementsByTagName('body')[0];
+    var _html = _body.parentNode;
+
+    var _overlay = document.querySelector('.overlay');
+
+    var _modalCall = document.querySelector('.popup');
+
+    _btnCall.addEventListener('click', _modalShow);
+
+    _modalClose.addEventListener('click', _modalHide);
+  }
 })();
 "use strict";
 
@@ -529,7 +566,7 @@ new WOW().init();
     var videoBlock = document.querySelector('.video__wrap');
     var videoPlayToggle = document.querySelector('.video-bg--toggle');
     var video = document.querySelector('.video');
-    video.addEventListener('click', videoToggle);
+    videoBlock.addEventListener('click', videoToggle);
   }
 })();
 "use strict";

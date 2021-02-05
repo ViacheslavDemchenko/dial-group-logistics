@@ -191,10 +191,20 @@
       <div class="popup--registration">
         <div class="popup__title">Введите почту и пароль</div>
         <div class="popup__close"></div>
-        <form class="popup__form" id="popup-call" method="post" action="#!">
+        <form class="popup__form" id="popup-register" method="post" action="#!">
           <input class="header-form__email" type="email" placeholder="email">
           <input class="header-form__password" type="password" placeholder="*************">
           <button class="btn btn--modal-login" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+      <div class="popup">
+        <div class="popup__title">Закажите обратный звонок</div>
+        <div class="popup__close"></div>
+        <form class="popup__form" id="popup" method="post" action="#!">
+          <input class="header-form__name" type="text" placeholder="Ваше имя">
+          <input class="header-form__phone" type="text" placeholder="+7 (___) __ - __ - __" id="modal__input-phone">
+          <textarea class="popup-message" name="popup-message" placeholder="Ваше сообщение"></textarea>
+          <button class="btn btn--modal" type="submit">Заказать консультацию</button>
         </form>
       </div>
       <div class="overlay"></div>
