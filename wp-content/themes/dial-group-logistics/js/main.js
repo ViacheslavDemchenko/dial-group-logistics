@@ -7,7 +7,7 @@ AOS.init();
 
 (function () {
   if (document.getElementById('map')) {
-    var init = function init() {
+    var init = function init(ymaps) {
       if (!myMap) {
         myMap = new ymaps.Map('map', {
           center: currentCoord,
@@ -36,13 +36,13 @@ AOS.init();
         officeMap.classList.add('map__title--active');
         warehouseMap.classList.remove('map__title--active');
         currentCoord = officeCoord;
-        init();
+        init(ymaps);
       });
       warehouseMap.addEventListener('click', function () {
         warehouseMap.classList.add('map__title--active');
         officeMap.classList.remove('map__title--active');
         currentCoord = warehouseCoord;
-        init();
+        init(ymaps);
       });
     }
   }
