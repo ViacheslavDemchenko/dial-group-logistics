@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dial Group Logistics</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/css/main.min.css">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/fonts/fonts.css">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/css/animate.min.css">
+    <script src="./wp-content/themes/dial-group-logistics/js/swiper-bundle.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;amp;apikey=050f8457-742b-487a-9448-c1e94f9814c3" type="text/javascript" defer></script>
+    <script src="./wp-content/themes/dial-group-logistics/js/wow.min.js" defer></script>
+    <script src="./wp-content/themes/dial-group-logistics/js/main.js" defer></script>
+    <link rel="icon" href="#!" type="image/x-icon">
+    <link rel="shortcut icon" href="#!" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#!">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header">
+        <div class="header__top--white">
+          <div class="container">
+            <div class="header-top__inner header-top__inner--white wow animate__animated animate__fadeInDown" data-wow-duration="2s" data-wow-delay="1s"><a class="logo logo--header" href="index.html"><img src="./wp-content/themes/dial-group-logistics/img/icons/logo.svg" width="209" height="52" alt="Логотип компании Dial Group Logistics"></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+                  <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                  <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                  <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                  <li class="nav__item"><a class="nav__link" href="calculator.html">Калькулятор</a></li>
+                </ul>
+              </nav>
+              <div class="inner-block"><a class="phone" href="tel:+78007070525">+7(800)707-05-25</a>
+                <div class="user-block"><a class="user__registration" href="#!">Регистрация /&#160;</a><a class="user__login" href="#!">войти</a></div>
+              </div>
+              <button class="cmn-toggle-switch cmn-toggle-switch__htx" area-label="Мобильное меню" id="menu__button"><span>toggle menu</span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="documents-top documents-top--user-account">
+        <div class="container">
+          <div class="documents-top__row">
+            <div class="documents__logo">
+              <picture>
+                <source type="image/webp" srcset="./wp-content/themes/dial-group-logistics/img/documents-logo@1x.webp 1x, ./wp-content/themes/dial-group-logistics/img/documents-logo@2x.webp 2x"><img src="./wp-content/themes/dial-group-logistics/img/documents-logo@1x.png" srcset="./wp-content/themes/dial-group-logistics/img/documents-logo@2x.png 2x" alt="" width="101" height="53">
+              </picture>
+            </div>
+            <nav class="documents-nav">
+              <ul class="documents-nav__list">
+                <li class="nav__item"><a class="nav__link" href="#!">Документы</a></li>
+                <li class="nav__item"><a class="nav__link" href="#!">История заказов</a></li>
+                <li class="nav__item"><a class="nav__link" href="#!">Настройки</a></li>
+              </ul>
+            </nav>
+            <div class="documents__input-wrap">
+              <input class="documents__input" type="text" name="document" placeholder="Введите уникальный номер заказа для отслеживания">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="user-data">
+        <div class="container">
+          <div class="user-data__inner">
+            <div class="user-data__left">
+              <div class="settings__block">
+                <div class="company__title">Название организации</div>
+                <div class="company__name">LUTOSA</div>
+              </div>
+              <div class="settings__block">
+                <div class="email__title">Почта организации</div>
+                <div class="company__email">LUTOSA@mail.ru</div>
+              </div>
+              <div class="settings__block">
+                <div class="phone__title">Телефон</div>
+                <div class="phone__number">89089468564 </div>
+              </div>
+              <div class="settings__block">
+                <div class="company__person">Контактное лицо организации</div>
+                <div class="person__name">Иванов Иван Иванович </div>
+              </div>
+              <div class="settings__block">
+                <div class="id__title">ИНН организации</div>
+                <div class="id__number">3214214213215213432134214</div>
+              </div>
+              <button class="btn btn--documents">оформить заявку</button>
+            </div>
+            <div class="user-data__right">
+              <div class="load-data">
+                <div class="load__list__wrap">
+                  <div class="load__list">
+                    <div class="load__item">
+                      <div class="item__top">
+                        <div class="item__load">Груз на складе DGL.</div>
+                        <div class="item__date">17.11.2020</div>
+                      </div>
+                      <div class="item__bottom">
+                        <div class="dispatch__date">18.11.2020 &#160;</div>
+                        <div class="load__info">- планируемая дата отправки</div>
+                      </div>
+                    </div>
+                    <div class="load__item">
+                      <div class="item__top">
+                        <div class="item__load">Груз в пути. </div>
+                        <div class="item__date">17.11.2020</div>
+                      </div>
+                      <div class="item__bottom">
+                        <div class="dispatch__date">18.11.2020 &#160;</div>
+                        <div class="load__info">- планируемая дата прибытия</div>
+                      </div>
+                    </div>
+                    <div class="load__item">
+                      <div class="item__top">
+                        <div class="item__load item__load--active">Груз прибыл на терминал в город Москва.</div>
+                        <div class="item__date item__date--active">17.11.2020</div>
+                      </div>
+                      <div class="item__bottom">
+                        <div class="dispatch__date">18.11.2020 &#160;</div>
+                        <div class="load__info">- планируемая дата отправки</div>
+                      </div>
+                    </div>
+                    <div class="load__item">
+                      <div class="item__top">
+                        <div class="item__load">Груз доставлен. </div>
+                        <div class="item__date">17.11.2020 </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="orders-history__inner orders-history__inner--margin">
+                <h1 class="orders-history__title">История заказов</h1>
+                <div class="orders-col__titles">
+                  <div class="col__title">Трек номер</div>
+                  <div class="col__title">Дата заказа</div>
+                  <div class="col__title">Маршрут</div>
+                  <div class="col__title">Дата получения</div>
+                </div>
+                <div class="orders-history__list">
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                  <div class="order">
+                    <div class="order__top">
+                      <div class="order__number">5495459644894984981591917917</div>
+                      <div class="order__date">17.11.2020 </div>
+                      <div class="order__route">Москва - Екатеренбург</div>
+                      <div class="order__date">16.12.2020</div>
+                    </div>
+                    <div class="order__bottom"><a class="order__documents" href="#!">Ссылка на документы</a></div>
+                  </div>
+                </div><a class="orders-history__link" href="#!">История заказов</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="transportation-stat">
+          <div class="cargos">
+            <div class="cargos__data">3323</div>
+            <div class="cargos__title">Перевезенные грузы</div>
+          </div>
+          <div class="pallets">
+            <div class="pallets__data">3323</div>
+            <div class="pallets__title">Кол-во паллетов</div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><a class="logo logo--footer" href="index.html"><img src="./wp-content/themes/dial-group-logistics/img/icons/logo.svg" width="124" height="43" alt="Логотип компании Dial Group Logistics"></a>
+            <div class="phones-list"><a class="phone__item" href="tel:88007070525">8(800)707-05-25</a><a class="phone__item" href="tel:89037162900">8(903)716-29-00</a><a class="phone__item" href="tel:89030145090">8(903)014-50-90</a></div>
+            <div class="sites-list">
+              <div class="site__item">Сайт по сборным грузам</div>
+              <div class="site__item">Сайт по грузоперевозкам</div>
+              <div class="site__item">Сайт по складской логистики</div>
+            </div>
+            <div class="copyright">Все права защищенны DGL sklad</div>
+            <div class="site-author">Сайт делал <span>Андрей Спаркси</span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup--login">
+        <div class="popup__title">Введите почту и пароль</div>
+        <div class="popup__close"></div>
+        <form class="popup__form" id="popup-call" method="post" action="#!">
+          <input class="header-form__email" type="email" placeholder="email">
+          <input class="header-form__password" type="password" placeholder="*************">
+          <button class="btn btn--modal-login" type="submit">Войти</button>
+        </form>
+      </div>
+      <div class="popup--registration">
+        <div class="popup__title">Введите почту и пароль</div>
+        <div class="popup__close"></div>
+        <form class="popup__form" id="popup-call" method="post" action="#!">
+          <input class="header-form__email" type="email" placeholder="email">
+          <input class="header-form__password" type="password" placeholder="*************">
+          <button class="btn btn--modal-login" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>

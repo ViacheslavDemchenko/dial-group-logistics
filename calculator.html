@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dial Group Logistics</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/css/main.min.css">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/fonts/fonts.css">
+    <link rel="stylesheet" href="./wp-content/themes/dial-group-logistics/css/animate.min.css">
+    <script src="./wp-content/themes/dial-group-logistics/js/swiper-bundle.min.js" defer></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;amp;apikey=050f8457-742b-487a-9448-c1e94f9814c3" type="text/javascript" defer></script>
+    <script src="./wp-content/themes/dial-group-logistics/js/wow.min.js" defer></script>
+    <script src="./wp-content/themes/dial-group-logistics/js/main.js" defer></script>
+    <link rel="icon" href="#!" type="image/x-icon">
+    <link rel="shortcut icon" href="#!" type="image/x-icon">
+    <link rel="apple-touch-icon" href="#!">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header">
+        <div class="header__top--white">
+          <div class="container">
+            <div class="header-top__inner header-top__inner--white wow animate__animated animate__fadeInDown" data-wow-duration="2s" data-wow-delay="1s"><a class="logo logo--header" href="index.html"><img src="./wp-content/themes/dial-group-logistics/img/icons/logo.svg" width="209" height="52" alt="Логотип компании Dial Group Logistics"></a>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="about.html">О нас</a></li>
+                  <li class="nav__item"><a class="nav__link" href="services.html">Услуги</a></li>
+                  <li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+                  <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+                  <li class="nav__item"><a class="nav__link" href="calculator.html">Калькулятор</a></li>
+                </ul>
+              </nav>
+              <div class="inner-block"><a class="phone" href="tel:+78007070525">+7(800)707-05-25</a>
+                <div class="user-block"><a class="user__registration" href="#!">Регистрация /&#160;</a><a class="user__login" href="#!">войти</a></div>
+              </div>
+              <button class="cmn-toggle-switch cmn-toggle-switch__htx" area-label="Мобильное меню" id="menu__button"><span>toggle menu</span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="calculator">
+        <div class="container">
+          <form class="calculator__inner" action="#">
+            <div class="calculator__left">
+              <div class="location__options__wrap">
+                <div class="location__options">
+                  <h2 class="location__options-title">Параметры местоположения</h2>
+                  <div class="location__options__inner-wrap">
+                    <div class="location__options__row">
+                      <div class="location__options__block">
+                        <label class="label select__title">Город отправления
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="location__options__block">
+                        <label class="label select__title">Адрес терминала
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="arrows-wrap">              
+                      <div class="arrows">
+                        <div class="arrow-left"><img src="./wp-content/themes/dial-group-logistics/img/icons/arrow-calculator.svg"></div>
+                        <div class="arrow-right"><img src="./wp-content/themes/dial-group-logistics/img/icons/arrow-calculator.svg"></div>
+                      </div>
+                      <div class="arrows">
+                        <div class="arrow-left"><img src="./wp-content/themes/dial-group-logistics/img/icons/arrow-calculator.svg"></div>
+                        <div class="arrow-right"><img src="./wp-content/themes/dial-group-logistics/img/icons/arrow-calculator.svg"></div>
+                      </div>
+                    </div>
+                    <div class="location__options__row">
+                      <div class="location__options__block">
+                        <label class="label select__title">Город доставки
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="location__options__block">
+                        <label class="label select__title">Адрес терминала
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="location__checkbox__row">
+                    <div class="checkbox-wrap">
+                      <input class="cargo-receipt" id="cargo-receipt" type="checkbox" name="cargo-receipt">
+                      <label for="cargo-receipt">услуга забора груза от клиента</label>
+                    </div>
+                    <div class="checkbox-wrap">
+                      <input class="cargo-receipt" id="cargo-delivery" type="checkbox" name="cargo-delivery">
+                      <label for="cargo-delivery">услуга доставки груза до получателя</label>
+                    </div>
+                  </div>
+                  <div class="location__options__inner-wrap">
+                    <div class="location__options__row">
+                      <div class="location__options__block">
+                        <label class="label select__title">Адрес забора
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="location__options__block">
+                        <label class="label select__title">Время забора
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="location__options__row">
+                      <div class="location__options__block">
+                        <label class="label select__title">Адрес доставки
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="location__options__block">
+                        <label class="label select__title">Время доставки
+                          <select class="turnintodropdown">
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                            <option>г. Москва</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="additional-services">   
+                    <div class="additional-services__title">Дополнительные услуги</div>
+                    <div class="location__checkbox__row">
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-1" type="checkbox" name="cargo-service-1">
+                        <label for="cargo-service-1">Паллетирование </label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-2" type="checkbox" name="cargo-service-2">
+                        <label for="cargo-service-2">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-3" type="checkbox" name="cargo-service-3">
+                        <label for="cargo-service-3">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                    </div>
+                    <div class="location__checkbox__row">
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-4" type="checkbox" name="cargo-service-4">
+                        <label for="cargo-service-4">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-5" type="checkbox" name="cargo-service-5">
+                        <label for="cargo-service-5">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-6" type="checkbox" name="cargo-service-6">
+                        <label for="cargo-service-6">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                    </div>
+                    <div class="location__checkbox__row">
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-7" type="checkbox" name="cargo-service-7">
+                        <label for="cargo-service-7">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-8" type="checkbox" name="cargo-service-8">
+                        <label for="cargo-service-8">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                      <div class="checkbox-wrap">
+                        <input class="cargo-receipt" id="cargo-service-9" type="checkbox" name="cargo-service-9">
+                        <label for="cargo-service-9">Паллетирование</label><span class="service__price">2400 руб.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="total-sum">232422 <span class="total-sum__rub">руб</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="calculator__right">
+              <div class="cargo__options">
+                <h2 class="cargo__options-title">Параметры груза</h2>
+                <div class="cargo__options__row">
+                  <div class="input-wrap">
+                    <label for="cargo-width">Ширина груза</label>
+                    <input class="cargo-receipt" id="cargo-width" type="text" name="cargo-width">
+                  </div>
+                  <div class="input-wrap">
+                    <label for="cargo-length">Длинна груза</label>
+                    <input class="cargo-receipt" id="cargo-length" type="text" name="cargo-length">
+                  </div>
+                  <div class="input-wrap">
+                    <label for="cargo-height">Высота груза</label>
+                    <input class="cargo-receipt" id="cargo-height" type="text" name="cargo-height">
+                  </div>
+                </div>
+                <div class="cargo__options__row">
+                  <div class="input-wrap input-wrap--long">
+                    <label for="cargo-volume">Объем груза</label>
+                    <input class="cargo-receipt" id="cargo-volume" type="text" name="cargo-volume">
+                  </div>
+                </div>
+                <div class="cargo__options__row">
+                  <div class="input-wrap input-wrap--half">
+                    <label for="cargo-places">Кол-во мест</label>
+                    <input class="cargo-receipt" id="cargo-places" type="text" name="cargo-places">
+                  </div>
+                  <div class="input-wrap input-wrap--half">
+                    <label for="cargo-weight">Вес груза</label>
+                    <input class="cargo-receipt" id="cargo-weight" type="text" name="cargo-weight">
+                  </div>
+                </div>
+                <div class="cargo__options__row">
+                  <div class="input-wrap input-wrap--half">
+                    <label for="cargo-packaging">Вид упаковки</label>
+                    <input class="cargo-receipt" id="cargo-packaging" type="text" name="cargo-packaging">
+                  </div>
+                  <div class="input-wrap input-wrap--half">
+                    <label for="cargo-price">Стоимость груза</label>
+                    <input class="cargo-receipt" id="cargo-price" type="text" name="cargo-price">
+                  </div>
+                </div>
+                <div class="cargo__options__row">
+                  <div class="location__options__block">
+                    <label class="cargo-characteristics select__title">Характеристика груза
+                      <select class="turnintodropdown">
+                        <option>B2B БИЗНЕС</option>
+                        <option>B2B БИЗНЕС</option>
+                        <option>B2B БИЗНЕС</option>
+                        <option>B2B БИЗНЕС</option>
+                        <option>B2B БИЗНЕС</option>
+                      </select>
+                    </label>
+                  </div>
+                  <div class="input-wrap input-wrap--half">
+                    <label for="cargo-insurance">Страховка</label>
+                    <input class="cargo-receipt" id="cargo-insurance" type="text" name="cargo-insurance">
+                  </div>
+                </div>
+                <textarea class="message" id="message" name="message" placeholder="Комментраий к заявке"></textarea>
+                <button class="btn btn--calculator">Оформить заявку</button>
+              </div>
+            </div>
+          </form>
+          <form class="user-info" action="#">
+            <div class="location__options__row">
+              <div class="input-wrap">
+                <label for="user-login">Ваш логин</label>
+                <input class="cargo-receipt" id="user-login" type="text" name="user-login">
+              </div>
+              <div class="input-wrap">
+                <label for="user-password">Ваш пароль</label>
+                <input class="cargo-receipt" id="user-password" type="text" name="user-password">
+              </div>
+              <div class="input-wrap">
+                <label for="user-email">Ваша почта</label>
+                <input class="cargo-receipt" id="user-email" type="text" name="user-email">
+              </div>
+            </div>
+            <div class="location__options__row">
+              <div class="input-wrap">
+                <label for="sender-name">Наименование отправителя</label>
+                <input class="cargo-receipt" id="sender-name" type="text" name="sender-name">
+              </div>
+              <div class="input-wrap">
+                <label for="sender-fio">ФИО отправителя</label>
+                <input class="cargo-receipt" id="sender-fio" type="text" name="sender-fio">
+              </div>
+              <div class="input-wrap">
+                <label for="sender-phone">Мобильный телефон отправителя</label>
+                <input class="cargo-receipt" id="sender-phone" type="text" name="sender-phone">
+              </div>
+            </div>
+            <div class="location__options__row">
+              <div class="input-wrap">
+                <label for="receiver-name">Наименование получателя</label>
+                <input class="cargo-receipt" id="receiver-name" type="text" name="receiver-name">
+              </div>
+              <div class="input-wrap">
+                <label for="receiver-fio">ФИО получателя</label>
+                <input class="cargo-receipt" id="receiver-fio" type="text" name="receiver-fio">
+              </div>
+              <div class="input-wrap">
+                <label for="receiver-phone">Мобильный телефон получателя</label>
+                <input class="cargo-receipt" id="receiver-phone" type="text" name="receiver-phone">
+              </div>
+            </div>
+            <button class="btn btn--calculator">Отправить</button>
+          </form>
+        </div>
+      </section>
+      <div class="container">
+        <div class="transportation-stat">
+          <div class="cargos">
+            <div class="cargos__data">3323</div>
+            <div class="cargos__title">Перевезенные грузы</div>
+          </div>
+          <div class="pallets">
+            <div class="pallets__data">3323</div>
+            <div class="pallets__title">Кол-во паллетов</div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><a class="logo logo--footer" href="index.html"><img src="./wp-content/themes/dial-group-logistics/img/icons/logo.svg" width="124" height="43" alt="Логотип компании Dial Group Logistics"></a>
+            <div class="phones-list"><a class="phone__item" href="tel:88007070525">8(800)707-05-25</a><a class="phone__item" href="tel:89037162900">8(903)716-29-00</a><a class="phone__item" href="tel:89030145090">8(903)014-50-90</a></div>
+            <div class="sites-list">
+              <div class="site__item">Сайт по сборным грузам</div>
+              <div class="site__item">Сайт по грузоперевозкам</div>
+              <div class="site__item">Сайт по складской логистики</div>
+            </div>
+            <div class="copyright">Все права защищенны DGL sklad</div>
+            <div class="site-author">Сайт делал <span>Андрей Спаркси</span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup--login">
+        <div class="popup__title">Введите почту и пароль</div>
+        <div class="popup__close"></div>
+        <form class="popup__form" id="popup-call" method="post" action="#!">
+          <input class="header-form__email" type="email" placeholder="email">
+          <input class="header-form__password" type="password" placeholder="*************">
+          <button class="btn btn--modal-login" type="submit">Войти</button>
+        </form>
+      </div>
+      <div class="popup--registration">
+        <div class="popup__title">Введите почту и пароль</div>
+        <div class="popup__close"></div>
+        <form class="popup__form" id="popup-call" method="post" action="#!">
+          <input class="header-form__email" type="email" placeholder="email">
+          <input class="header-form__password" type="password" placeholder="*************">
+          <button class="btn btn--modal-login" type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>
