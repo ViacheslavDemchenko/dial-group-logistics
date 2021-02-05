@@ -1,6 +1,6 @@
 "use strict";
 
-new WOW().init();
+AOS.init();
 "use strict";
 
 ;

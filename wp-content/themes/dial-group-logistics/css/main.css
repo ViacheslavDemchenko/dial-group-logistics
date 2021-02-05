@@ -2792,7 +2792,7 @@ video[poster] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 1s linear;
+  transition: all .3s linear;
 }
 
 .news__block:not(:last-child) {
